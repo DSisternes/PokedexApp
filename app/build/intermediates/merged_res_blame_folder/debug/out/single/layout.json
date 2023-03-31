@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.pokedex.app-mergeDebugResources-49:/layout/activity_info.xml",
+        "source": "com.example.pokedex.app-main-52:/layout/activity_info.xml"
+    },
+    {
+        "merged": "com.example.pokedex.app-mergeDebugResources-49:/layout/activity_list.xml",
+        "source": "com.example.pokedex.app-main-52:/layout/activity_list.xml"
+    },
+    {
+        "merged": "com.example.pokedex.app-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "com.example.pokedex.app-main-52:/layout/activity_main.xml"
+    }
+]
