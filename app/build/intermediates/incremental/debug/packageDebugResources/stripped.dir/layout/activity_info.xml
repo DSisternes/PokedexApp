@@ -27,6 +27,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck"
             tools:text="Pokemon Name" />
 
         <ImageView
@@ -40,7 +41,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nameTextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/weightText"
