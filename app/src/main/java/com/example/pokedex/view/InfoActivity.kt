@@ -10,7 +10,7 @@ import com.example.pokedex.databinding.ActivityInfoBinding
 @Suppress("DEPRECATION")
 class InfoActivity : AppCompatActivity() {
 
-    lateinit var viewModel: InfoViewModel
+    private lateinit var viewModel: InfoViewModel
     private lateinit var binding: ActivityInfoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

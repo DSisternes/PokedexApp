@@ -1,5 +1,6 @@
 package com.example.pokedex.view
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -7,8 +8,9 @@ import com.example.pokedex.databinding.ActivityListBinding
 import com.example.pokedex.model.Result
 
 class ListAdapter(private val pokemonClick: (Int) -> Unit): RecyclerView.Adapter<ListAdapter.SearchViewHolder>() {
-    private var pokemonList: List<Result> = emptyList<Result>()
+    private var pokemonList: List<Result> = emptyList()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setData(list: List<Result>) {
         pokemonList = list
         notifyDataSetChanged()
@@ -23,6 +25,7 @@ class ListAdapter(private val pokemonClick: (Int) -> Unit): RecyclerView.Adapter
         return pokemonList.size
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: SearchViewHolder, position: Int) {
         val binding = holder.binding
         val pokemon = pokemonList[position]

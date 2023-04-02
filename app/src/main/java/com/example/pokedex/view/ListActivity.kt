@@ -1,9 +1,8 @@
 package com.example.pokedex.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.Observer
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pokedex.databinding.ActivityMainBinding
@@ -32,8 +31,8 @@ class ListActivity : AppCompatActivity() {
 
         binding.pokelistRecyclerView.adapter = listAdapter
         viewModel.getPokemonList()
-        viewModel.pokemonList.observe(this, Observer { list ->
+        viewModel.pokemonList.observe(this) { list ->
             listAdapter.setData(list)
-        })
+        }
     }
 }
